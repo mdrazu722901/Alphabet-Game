@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="font.css">
+
+
+</head>
+
+<body class="bg-[#010313]">
+    <main class="bg-[url('images/background.png')] min-h-screen bg-no-repeat bg-center">
+        <section class="flex justify-center items-center" id="homePage">
+            <div class="text-center text-white" style="padding-top: 200px;">
+                <h1 class="anton-regular text-8xl">ALPHABET CLASH</h1>
+                <p class="text-3xl">Unleash your keyboard kung FU: "Enter" to Play</p>
+                <button class="btn btn-success" id="home-page-btn">Enter</button>
+            </div>
+        </section>
+        <section class="hidden" id="display-part">
+            <div>
+                <!-- screen -->
+                <div class="bg-[#FFFFFF] opacity-80 text-center">
+                    <div class="artboard artboard-horizontal phone-6">
+                        <span class="bg-black p-5 text-white rounded-b-lg">when typing keyboard don't watch keyboard
+                            while time</span>
+                        <div class="text-center text-8xl pt-8">
+                            <h1 id="display-alphabet">Y</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- key Board start -->
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd" id="q">q</kbd>
+                    <kbd class="kbd" id="w">w</kbd>
+                    <kbd class="kbd" id="e">e</kbd>
+                    <kbd class="kbd" id="r">r</kbd>
+                    <kbd class="kbd" id="t">t</kbd>
+                    <kbd class="kbd" id="y">y</kbd>
+                    <kbd class="kbd" id="u">u</kbd>
+                    <kbd class="kbd" id="i">i</kbd>
+                    <kbd class="kbd" id="o">o</kbd>
+                    <kbd class="kbd" id="p">p</kbd>
+                </div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd" id="a">a</kbd>
+                    <kbd class="kbd" id="s">s</kbd>
+                    <kbd class="kbd" id="d">d</kbd>
+                    <kbd class="kbd" id="f">f</kbd>
+                    <kbd class="kbd" id="g">g</kbd>
+                    <kbd class="kbd" id="h">h</kbd>
+                    <kbd class="kbd" id="j">j</kbd>
+                    <kbd class="kbd" id="k">k</kbd>
+                    <kbd class="kbd" id="l">l</kbd>
+                </div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd" id="z">z</kbd>
+                    <kbd class="kbd" id="x">x</kbd>
+                    <kbd class="kbd" id="c">c</kbd>
+                    <kbd class="kbd" id="v">v</kbd>
+                    <kbd class="kbd" id="b">b</kbd>
+                    <kbd class="kbd" id="n">n</kbd>
+                    <kbd class="kbd" id="m">m</kbd>
+                    <kbd class="kbd" id="/">/</kbd>
+                </div>
+                <!-- end KeyBoard -->
+                <div class="flex justify-between">
+                    <button class="btn btn-primary">Life : 1</button>
+                    <button class="btn btn-secondary">Score</button>
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
+        <section class="hidden flex justify-center items-center min-h-screen text-white anton-regular">
+            <div class="bg-[#3cb371] p-8 rounded text-center">
+                <h1 class="text-3xl p-5">Score: 1</h1>
+                <button class="btn btn-primary p-2">Play Now</button>
+                <p class="p-2">Practice make will pro</p>
+            </div>
+        </section>
+    </main>
+    <script src="utility.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
