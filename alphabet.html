@@ -70,18 +70,18 @@
                 </div>
                 <!-- end KeyBoard -->
                 <div class="flex justify-between">
-                    <button class="btn btn-primary">Life : 1</button>
-                    <button class="btn btn-secondary">Score</button>
+                    <button class="btn btn-primary" v>Life : <span id="life">3</span></button>
+                    <button class="btn btn-secondary">Score: <span id="score">0</span></button>
                 </div>
             </div>
         </section>
         <section>
 
         </section>
-        <section class="hidden flex justify-center items-center min-h-screen text-white anton-regular">
+        <section class="hidden flex justify-center items-center min-h-screen text-white anton-regular" id="scoreBoard">
             <div class="bg-[#3cb371] p-8 rounded text-center">
-                <h1 class="text-3xl p-5">Score: 1</h1>
-                <button class="btn btn-primary p-2">Play Now</button>
+                <h1 class="text-3xl p-5">Score: <span id="FinalScore">0</span></h1>
+                <button class="btn btn-primary p-2" id="playNow">Play Now</button>
                 <p class="p-2">Practice make will pro</p>
             </div>
         </section>
